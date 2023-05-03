@@ -1,0 +1,25 @@
+.main {
+    width: 80vw;
+    margin:0 auto;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+ul li {
+    border: 1px solid black;
+    padding: 10px;
+    list-style:none;
+    width: 150px;
+    height: 250px;
+    margin:5px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}
