@@ -71,4 +71,40 @@
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
 }
+.ice {
+    background-color: rgb(0, 208, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.rock {
+    background-color: rgb(160, 134, 72);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.dragon {
+    background-color: rgb(41, 81, 203);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.ghost {
+    background-color: rgb(55, 83, 169);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.dark {
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.steel {
+    background-color: rgb(166, 166, 166);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
 
