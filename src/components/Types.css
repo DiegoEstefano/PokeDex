@@ -1,0 +1,74 @@
+.grass {
+    background-color: rgb(45, 188, 48);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.poison {
+    background-color: rgb(136, 60, 191);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.fire {
+    background-color: rgb(239, 73, 36);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.water {
+    background-color: rgb(0, 232, 228);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.flying {
+    background-color: rgb(58, 150, 196);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.bug {
+    background-color: rgb(135, 140, 3);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.normal {
+    background-color: rgb(104, 104, 101);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+
+.electric {
+    background-color: rgb(255, 255, 110);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px white;
+    font-size: 0.9rem;
+}
+.ground {
+    background-color: rgb(131, 74, 5);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.fairy {
+    background-color: rgb(240, 164, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.fighting {
+    background-color: rgb(200, 72, 21);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+.psychic {
+    background-color: rgb(128, 21, 200);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.9rem;
+}
+

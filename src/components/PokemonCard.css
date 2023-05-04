@@ -34,6 +34,7 @@ section {
     width: 125px;
 }
 
+
 .types {
     display: flex;
     justify-content: space-around;
@@ -62,7 +63,7 @@ img {
 
 @media (max-width: 450px) {
     ul {
-        width: 80vw;
+        width: 60vw;
     }
 
     ul li {
