@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import PokemonCard from './components/PokemonCard'
 import useFetch from './hooks/useFetch'
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0"
+const url = "https://pokeapi.co/api/v2/pokemon?limit=900&offset=0"
 
 function App() {
   const { pokemon, loading } = useFetch(url);
