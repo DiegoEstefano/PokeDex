@@ -30,6 +30,7 @@ li p {
 p {
     margin-top: 0.5rem;
 }
+
 section {
     width: 125px;
 }
@@ -72,9 +73,7 @@ img {
     }
 
     li p {
-        border: 1px solid black;
         border-radius: 6px;
-        color: rgb(0, 92, 212);
         font-weight: 700;
         font-size: 1.3rem;
     }
@@ -83,10 +82,12 @@ img {
         width: 190px;
         height: 230px;
     }
+
     section {
         width: 160px;
         height: 35px;
     }
+
     .types div {
         height: 35px;
     }
