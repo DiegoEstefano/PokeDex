@@ -6,7 +6,7 @@ ul {
 }
 
 ul li {
-    border: 1px solid black;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     list-style: none;
     width: 150px;
@@ -20,9 +20,9 @@ ul li {
 }
 
 li p {
-    border: 1px solid black;
+    border: 1.5px solid rgb(0, 0, 0);
     border-radius: 6px;
-    color: rgb(0, 92, 212);
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 0.9rem;
 }
@@ -43,7 +43,7 @@ section {
 }
 
 .types div {
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
