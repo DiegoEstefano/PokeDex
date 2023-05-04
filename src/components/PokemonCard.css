@@ -37,6 +37,8 @@ section {
 .types {
     display: flex;
     justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .types div {
@@ -48,6 +50,9 @@ section {
     -o-border-radius: 6px;
     width: inherit;
     margin: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -73,5 +78,15 @@ img {
         font-size: 1.3rem;
     }
 
-
+    img {
+        width: 140px;
+        height: 180px;
+    }
+    section {
+        width: 160px;
+        height: 35px;
+    }
+    .types div {
+        height: 35px;
+    }
 }
