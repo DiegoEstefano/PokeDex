@@ -2,7 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import PokemonCard from './components/PokemonCard'
 import useFetch from './hooks/useFetch'
-
+import pokedex from '../public/assets/pokedex.png'
 const url = "https://pokeapi.co/api/v2/pokemon?limit=900&offset=0"
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='main'>
-      <h1>Pokedex</h1>
+      <img className='logo' src={pokedex} alt="" />
       <div className='cards'>
         {!loading && <h1>Carregando...</h1>}
         {pokemon && pokemon.map((poke, i) => (

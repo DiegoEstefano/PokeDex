@@ -3,6 +3,10 @@
     margin:0 auto;
     text-align: center;
 }
+
+.logo {
+    width: 300px;
+}
 h1 {
     margin: 1rem 2rem;
 }
