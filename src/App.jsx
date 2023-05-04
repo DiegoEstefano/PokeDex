@@ -17,7 +17,7 @@ function App() {
       <div className='cards'>
         {!loading && <h1>Carregando...</h1>}
         {pokemon && pokemon.map((poke, i) => (
-          <PokemonCard name={poke.name} id={poke.id} img={poke.sprites.other.home.front_default} />
+          <PokemonCard name={poke.name} id={poke.id} img={poke.sprites.other.dream_world.front_default} />
         ))}
       </div>
     </div>

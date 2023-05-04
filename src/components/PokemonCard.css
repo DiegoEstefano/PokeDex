@@ -16,7 +16,7 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 li p {
@@ -30,6 +30,30 @@ li p {
 p {
     margin-top: 0.5rem;
 }
+section {
+    width: 125px;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+}
+
+.types div {
+    border: 1px solid black;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    width: inherit;
+    margin: 0.1rem;
+}
+
+img {
+    width: 120px;
+    height: 130px;
+}
 
 @media (max-width: 450px) {
     ul {
@@ -40,4 +64,14 @@ p {
         width: 70vw;
         height: 50vh;
     }
+
+    li p {
+        border: 1px solid black;
+        border-radius: 6px;
+        color: rgb(0, 92, 212);
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+
 }
