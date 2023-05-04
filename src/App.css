@@ -14,3 +14,7 @@ h1 {
     width: 80vw;
     text-align: center;
 }
+
+:root{
+    background-color: rgb(232, 232, 232);
+}
