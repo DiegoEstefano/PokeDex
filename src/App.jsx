@@ -1,5 +1,7 @@
 import './App.css'
 import { useState, useEffect } from 'react'
+import PokemonCard from './components/PokemonCard'
+
 
 const url = "https://pokeapi.co/api/v2/pokemon?limit=700&offset=0"
 
@@ -22,26 +24,21 @@ function App() {
     getPokemons()
   }, [])
 
- console.log(loading)
+  console.log(pokemon)
 
   return (
     <div className='main'>
       <h1>Pokedex</h1>
-      {!loading && <h1>Carregando...</h1>}
-     <ul>
-       {pokemon.length == 700  && pokemon.map((poke, i) => (
-        <section>
-          <li key={i}>{poke.name}
-          <img src={poke.sprites.front_default} alt="" />
-          <a>{poke.id}</a>
-          </li>
-        </section>
-       ))}  
-  
-     </ul>
-
+      <div className='cards'>
+        {!loading && <h1>Carregando...</h1>}
+        {pokemon && pokemon.map((poke, i) => (
+          <PokemonCard name={poke.name} id={poke.id} img={poke.sprites.other.home.front_default} />
+        ))}
+      </div>
     </div>
   )
 }
 
+
 export default App
+
