@@ -12,7 +12,7 @@ export default function Nav() {
         e.preventDefault();
         console.log(search)
         if (!search) return
-        navigate(`/search?q=${search}`)
+        navigate(`/search?query=${search.toLowerCase()}`)
         setSearch("")
     }
     return (
@@ -22,7 +22,7 @@ export default function Nav() {
             </Link>
             <form className='formulario' onSubmit={handleSubmit}>
                 <label>
-                    <input className='pesquisa' type="text" name='pesquisa' placeholder='Digite sua busca' onChange={(e) => setSearch(e.target.value)} value={search} />
+                    <input className='pesquisa' type="text" name='pesquisa' placeholder='Nome ou número' onChange={(e) => setSearch(e.target.value)} value={search} />
                 </label>
                 <input className='procurar' type="submit" value="Procurar" />
             </form>
