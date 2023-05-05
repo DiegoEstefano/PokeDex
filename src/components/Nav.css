@@ -13,11 +13,20 @@ form label {
 .pesquisa {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: .2rem 1rem;
+    outline: none;
+}
+
+.pesquisa::placeholder {
+    font-size: 0.9rem;
 }
 
 .procurar {
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: rgb(57, 129, 236);
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(242, 223, 55);
+    border: 1.5px solid rgb(59, 94, 232);
     cursor: pointer;
     padding: 0.2rem 1rem;
     border-radius: 8px;
