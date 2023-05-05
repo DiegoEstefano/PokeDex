@@ -8,7 +8,7 @@ import useFetch from './hooks/useFetch'
 import Nav from './components/Nav'
 import Loading from './components/Loading'
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=200&offset=0"
+const url = "https://pokeapi.co/api/v2/pokemon?limit=650&offset=0"
 
 function App() {
 
