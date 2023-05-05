@@ -1,5 +1,4 @@
 import './App.css'
-
 // importação de hooks
 import { useState, useEffect } from 'react'
 
@@ -7,27 +6,26 @@ import { useState, useEffect } from 'react'
 import PokemonCard from './components/PokemonCard'
 import useFetch from './hooks/useFetch'
 import Nav from './components/Nav'
+import Loading from './components/Loading'
 
-
-
-const url = "https://pokeapi.co/api/v2/pokemon?limit=650&offset=0"
+const url = "https://pokeapi.co/api/v2/pokemon?limit=200&offset=0"
 
 function App() {
 
-  const { pokemon, loading } = useFetch(url);
+  const { pokemon, loading, progress } = useFetch(url);
 
-  console.log(pokemon)
 
   return (
     <div className='main'>
       <Nav />
       <div className='cards'>
-         {!loading && <h1>Carregando...</h1>}
+  
+         {!loading && <Loading progress={progress} />}
         {pokemon && pokemon.map((poke, i) => (
-          <PokemonCard name={poke.name} 
-          id={poke.id} 
-          img={poke.sprites.other.dream_world.front_default}
-           types={poke.types} />
+          <PokemonCard name={poke.name}
+            id={poke.id}
+            img={poke.sprites.other.dream_world.front_default}
+            types={poke.types} />
         ))} 
       </div>
     </div>

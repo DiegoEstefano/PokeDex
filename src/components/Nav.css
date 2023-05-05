@@ -22,11 +22,11 @@ form label {
 }
 
 .procurar {
-    background-color: rgb(57, 129, 236);
+    background-color: #4153d9;
     font-weight: 600;
     font-size: 1rem;
-    color: rgb(242, 223, 55);
-    border: 1.5px solid rgb(59, 94, 232);
+    color: #fee131;
+    border: 1.5px solid #4153d9;
     cursor: pointer;
     padding: 0.2rem 1rem;
     border-radius: 8px;
