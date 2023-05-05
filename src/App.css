@@ -2,12 +2,14 @@
     width: 80vw;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .logo {
     margin-top: 1.5rem;
     width: 300px;
     height: 120px;
+
 }
 
 h1 {
@@ -24,7 +26,9 @@ h1 {
 }
 
 :root {
-    background-color: rgb(232, 232, 232);
+    background-image: url("../public/assets/wallpaper.png");
+    background-size: contain;
+
 }
 
 @media (max-width: 450px) {
