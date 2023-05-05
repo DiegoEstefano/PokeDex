@@ -13,8 +13,8 @@ import Home from './pages/Home'
 function App() {
   return (
     <div className='main'>
-      <Nav />
       <BrowserRouter>
+      <Nav />
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/search' element={<Search/>}/>

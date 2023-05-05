@@ -7,7 +7,7 @@ export default function PokemonCard({ name, id, img, types }) {
             {<li className={types[0].type.name}>
                 <img src={img} alt={name} />
                 <section>
-                    <span>#{id < 10 ? `0${id}` : id}</span>
+                    <span>#{id < 10 ? `0${id}` : id} {id > 100 && `${id}`}</span>
                     <p>{name.toUpperCase()}</p>
                 </section>
                 <Types types={types} />
