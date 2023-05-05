@@ -23,18 +23,16 @@ export default function Search() {
   }, [query])
 
   return (
-    <>
+    <div className='search-main'>
       <h1>Resultados para: {query.toUpperCase()} </h1>
       <div className='cards'>
-        <Loading/>
         {pokemon &&
           <PokemonCard name={pokemon.name}
             id={pokemon.id}
             img={pokemon.sprites.other.dream_world.front_default}
             types={pokemon.types} />
-
         }
       </div>
-    </>
+    </div>
   )
 }
