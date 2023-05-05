@@ -1,4 +1,3 @@
-import './loading.css'
 import { CircularProgress } from '@mui/material'
 import Stack from '@mui/material/Stack';
 export default function Loading({ progress }) {
