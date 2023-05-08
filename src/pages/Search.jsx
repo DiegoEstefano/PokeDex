@@ -11,7 +11,7 @@ export default function Search() {
 
   const [searchParams] = useSearchParams()
   const query = searchParams.get("q")
-  const [pokemon, setPokemon] = useState()
+  const [pokemon, setPokemon] = useState(null)
   useEffect(() => {
     async function getPokemons() {
       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${query}`)
