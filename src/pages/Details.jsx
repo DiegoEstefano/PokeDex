@@ -1,8 +1,9 @@
 import './Details.css'
 import { useSearchParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-import Search from './Search'
+import Loading from '../components/Loading'
 export default function Details() {
+  
   const [ids] = useSearchParams()
   const id = ids.get("id")
 
@@ -21,6 +22,7 @@ export default function Details() {
 
   return (
     <div>
+      {!pokemon && <Loading />}
       {
         pokemon &&
         <div>

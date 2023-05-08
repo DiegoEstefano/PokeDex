@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 export default function Loading({ progress }) {
     return (
         <div className='loading'>
-                <CircularProgress variant="determinate" color='warning' value={progress} size="80px"  />
+                <CircularProgress  color='warning'  size="80px"  />
         </div>
     )
 }
