@@ -30,7 +30,7 @@ export default function Details() {
           <p>{pokemon.name}</p>
           <p>{pokemon.abilities[0].ability.name}</p>
           <p>{pokemon.abilities[1].ability.name}</p>
-          <img src={pokemon.sprites.front_shiny} alt="" />
+          <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt="" />
         </div>
       }
 
