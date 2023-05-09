@@ -26,7 +26,6 @@ export default function Search() {
     <>
       <h1>Resultados para: {query.toUpperCase()} </h1>
       <div className='cards'>
-        
         {!pokemon && <Loading />}
         {pokemon &&
           <PokemonCard name={pokemon.name}
