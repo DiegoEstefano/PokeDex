@@ -6,7 +6,7 @@ import PokemonCard from '../components/PokemonCard'
 import useFetch from '../hooks/useFetch'
 import Loading from '../components/Loading'
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=650&offset=0"
+const url = `https://pokeapi.co/api/v2/pokemon?limit=650&offset=0`
 
 export default function Home() {
 

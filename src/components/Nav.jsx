@@ -1,15 +1,16 @@
 import '../components/Nav.css'
+import { CiSearch } from "react-icons/ci";
 import pokedex from '../../public/assets/pokedex.png'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Nav() {
-    
+
     const [search, setSearch] = useState("");
-    
+
     const navigate = useNavigate()
 
-// Faz o redirecionamento utilizando o 
+    // Faz o redirecionamento utilizando o 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(search)
@@ -26,7 +27,9 @@ export default function Nav() {
                 <label>
                     <input className='pesquisa' type="text" name='pesquisa' placeholder='Digite sua busca' onChange={(e) => setSearch(e.target.value)} value={search} />
                 </label>
-                <input className='procurar' type="submit" value="Procurar" />
+                <button className='procurar' type="submit">
+                    <CiSearch className='foto' />
+                </button>
             </form>
         </div>
     )
