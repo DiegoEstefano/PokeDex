@@ -6,33 +6,32 @@ ul {
 }
 
 ul li {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
+    border: 1px solid rgb(33, 39, 221);
     list-style: none;
-    width: 150px;
-    height: 250px;
+    width: 300px;
+    height: 150px;
     margin: 1rem 0;
     border-radius: 10px;
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
+    ransition: all 0.5s ease 0s;
+    background-color: rgb(72, 208, 176);
+    box-shadow: rgb(72, 208, 176) 0px 0px 1.25rem 0px;
 }
 
 li p {
-    border: 1.5px solid rgb(0, 0, 0);
     border-radius: 6px;
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 0.9rem;
 }
 
-p {
-    margin-top: 0.5rem;
-}
+
 
 section {
-    width: 125px;
+    width: 10vw;
 }
 
 
@@ -44,12 +43,10 @@ section {
 }
 
 .types div {
-    border: 1.5px solid black;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
     width: inherit;
     margin: 0.1rem;
     display: flex;
@@ -64,12 +61,13 @@ img {
 
 @media (max-width: 450px) {
     ul {
-        width: 60vw;
+
+        
     }
 
     ul li {
-        width: 70vw;
-        height: 50vh;
+        width: 80vw;
+        height: 22vh;
     }
 
     li p {
@@ -79,20 +77,16 @@ img {
     }
 
     img {
-        width: 190px;
-        height: 230px;
+        width: 33vw;
     }
 
     section {
-        width: 160px;
-        height: 35px;
+    
     }
 
     .types div {
         height: 35px;
     }
 
-    img {
-        
-    }
+
 }

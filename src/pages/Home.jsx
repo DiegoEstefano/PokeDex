@@ -18,7 +18,7 @@ export default function Home() {
         {pokemon && pokemon.map((poke, i) => (
           <PokemonCard name={poke.name}
             id={poke.id}
-            img={poke.sprites.versions['generation-v']['black-white'].animated.front_default}
+            img={poke.sprites.other['official-artwork'].front_default}
             types={poke.types} />
         ))}
       </div>
