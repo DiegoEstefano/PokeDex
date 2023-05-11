@@ -17,6 +17,6 @@ export default function useFetch(url) {
             setLoading(true)
         }
         getPokemons()
-    }, [])
+    }, [url])
     return { pokemon, loading }
 }
