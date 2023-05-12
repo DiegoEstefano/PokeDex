@@ -6,7 +6,7 @@ import PokemonCard from '../components/PokemonCard'
 import useFetch from '../hooks/useFetch'
 import Loading from '../components/Loading'
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=650&offset=0"
+const url = `https://pokeapi.co/api/v2/pokemon?limit=150&offset=0`
 
 export default function Home() {
 
@@ -18,7 +18,7 @@ export default function Home() {
         {pokemon && pokemon.map((poke, i) => (
           <PokemonCard name={poke.name}
             id={poke.id}
-            img={poke.sprites.other.dream_world.front_default}
+            img={poke.sprites.other['official-artwork'].front_default}
             types={poke.types} />
         ))}
       </div>

@@ -1,16 +1,15 @@
 import './Search.css'
 import { useState, useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
-
+import Loading from '../components/Loading'
 import PokemonCard from "../components/PokemonCard"
 const url = "https://pokeapi.co/api/v2/pokemon/"
 
 export default function Search() {
 
-// redirecionamento usando search params
+  // redirecionamento usando search params
   const [searchParams] = useSearchParams()
   const query = searchParams.get("q")
-
   const [pokemon, setPokemon] = useState(null)
 
   useEffect(() => {
@@ -27,8 +26,8 @@ export default function Search() {
     <>
       <h1>Resultados para: {query.toUpperCase()} </h1>
       <div className='cards'>
-
-               {pokemon &&
+        {!pokemon && <Loading />}
+        {pokemon &&
           <PokemonCard name={pokemon.name}
             id={pokemon.id}
             img={pokemon.sprites.other.dream_world.front_default}
@@ -38,4 +37,5 @@ export default function Search() {
       </div>
     </>
   )
+  return { pokemon }
 }
