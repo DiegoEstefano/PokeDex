@@ -9,6 +9,7 @@ import Nav from './components/Nav'
 //Importação de pages
 import Search from './pages/Search'
 import Home from './pages/Home'
+import Details from './pages/Details'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/search' element={<Search/>}/>
+          <Route path='/details' element={<Details/>}/>
         </Routes>
       </BrowserRouter>
     </div>

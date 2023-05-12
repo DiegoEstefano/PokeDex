@@ -6,8 +6,10 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Nav() {
     
     const [search, setSearch] = useState("");
+    
     const navigate = useNavigate()
 
+// Faz o redirecionamento utilizando o 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(search)
