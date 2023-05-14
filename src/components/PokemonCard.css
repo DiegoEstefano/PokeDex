@@ -39,6 +39,9 @@ section {
     justify-content: center;
     align-items: center;
     width: 120px;
+    height: 80px;
+    margin: 0 auto;
+
 }
 
 .types div {

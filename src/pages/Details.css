@@ -1,3 +1,38 @@
 div {
     color: rgb(8, 0, 255);
 }
+
+.detailHome {
+    width: 100%;
+    height: 30vh;
+    border: none;
+    border-radius: 0px 0px 40px 40px;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.detailHome section {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detailHome img {
+    width: 200px;
+    height: 100%;
+}
+.detailHome p {
+    font-size: 2rem;
+}
+
+
+.detailHome svg {
+    color: white;
+    font-size: 2rem;
+}
