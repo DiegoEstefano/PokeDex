@@ -47,8 +47,13 @@ export default function Details() {
         <div>
           <p>{pokemon.id}</p>
           <p>{pokemon.name}</p>
-          <p>{pokemon.abilities[0].ability.name}</p>
-          <p>{pokemon.abilities[1].ability.name}</p>
+          {pokemon.abilities[0]  ?
+            <p>{pokemon.abilities[0].ability.name}</p> :
+            <>
+              <p>{pokemon.abilities[0].ability.name}</p> <p>{pokemon.abilities[1].ability.name}</p>
+            </>
+          }
+
           <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt="" />
         </div>
       }
