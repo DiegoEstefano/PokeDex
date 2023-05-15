@@ -57,10 +57,10 @@ export default function Details() {
               <span>Name:</span> <span>{pokemon.name.toUpperCase()}</span>
             </div>
             <div className='aboutContainer'>
-              <span>Weight: </span> <span>{pokemon.weight} kg</span>
+              <span>Weight: </span> <span>{(pokemon.weight/10).toFixed(1)} kg</span>
             </div>
             <div className='aboutContainer'>
-              <span>Height: </span> <span>{pokemon.height} cm</span>
+              <span>Height: </span> <span>{(pokemon.height/10).toFixed(1)} m</span>
             </div>
             <div >
               <span>Abilities: </span>
