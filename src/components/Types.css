@@ -1,13 +1,15 @@
 .grass {
-    background-color: rgb(104, 252, 107);
+    background-color: rgb(72, 208, 176);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(72, 208, 176) 0px 0px 1.25rem 0px;
 }
 
-.grass .tipo1  {
-    background-color: rgb(119, 255, 0) ;
+.grass .tipo1 {
+    background-color: rgb(192, 247, 144);
+    box-shadow: rgb(105, 218, 7)0px 0px 1.25rem 0px;
 }
 
 .poison {
@@ -15,57 +17,85 @@
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
+    box-shadow: rgb(203, 131, 255) 0px 0px 1.25rem 0px;
     border: 1px solid rgb(0, 0, 0);
 }
+
 .poison .tipo1 {
     background-color: rgb(145, 3, 245);
+    box-shadow: rgb(139, 15, 139) 0px 0px 1.25rem 0px;
 }
+
+
+
 .fire {
     background-color: rgb(250, 124, 96);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(250, 124, 96) 0px 0px 1.25rem 0px;
 }
+
 .fire .tipo1 {
     background-color: rgb(255, 67, 67);
+    box-shadow: rgb(207, 2, 2) 0px 0px 1.25rem 0px;
 }
+
 .water {
     background-color: rgb(74, 201, 255);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(74, 201, 255) 0px 0px 1.25rem 0px;
+
 }
+
 .water .tipo1 {
-    background-color: rgb(86, 255, 255);
+    background-color: rgb(112, 173, 252);
+    box-shadow: rgb(8, 81, 112) 0px 0px 1.25rem 0px;
+
 }
+
 .flying {
     background-color: rgb(58, 150, 196);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(58, 150, 196) 0px 0px 1.25rem 0px;
 }
+
+
 .bug {
     background-color: rgb(191, 194, 93);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(191, 194, 93) 0px 0px 1.25rem 0px;
 }
+
 .bug .tipo1 {
-    background-color:rgb(156, 160, 27); 
+    background-color: rgb(156, 160, 27);
+    box-shadow: rgb(140, 145, 2) 0px 0px 1.25rem 0px;
+
 }
+
 .normal {
     background-color: rgb(149, 149, 149);
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(149, 149, 149) 0px 0px 1.25rem 0px;
 }
+
 .normal .tipo1 {
     background-color: rgb(105, 105, 105);
+    box-shadow: rgb(83, 83, 83) 0px 0px 1.25rem 0px;
+
 }
 
 .electric {
@@ -74,96 +104,174 @@
     text-shadow: 1px 1px 2px rgb(2, 2, 2);
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(247, 233, 157) 0px 0px 1.25rem 0px;
+
 }
 
 .electric .tipo1 {
     background-color: rgb(245, 227, 27);
+    box-shadow: rgb(228, 177, 9) 0px 0px 1.25rem 0px;
+    
 }
+
 .ground {
     background-color: rgb(153, 94, 21);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(156, 129, 53) 0px 0px 1.25rem 0px;
+
 }
 
 .ground .tipo1 {
     background-color: rgb(88, 50, 5);
+    box-shadow: rgb(184, 141, 22) 0px 0px 1.25rem 0px;
+
 }
+
 .fairy {
     background-color: rgb(243, 194, 253);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
-}
-.fairy .tipo1{
-    background-color: rgb(240, 164, 255);
+    box-shadow: rgb(243, 194, 253) 0px 0px 1.25rem 0px;
 
 }
+
+.fairy .tipo1 {
+    background-color: rgb(240, 164, 255);
+    box-shadow: rgb(171, 48, 196) 0px 0px 1.25rem 0px;
+
+
+}
+
 .fighting {
-    background-color: rgb(200, 72, 21);
+    background-color: rgb(248, 126, 77);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(248, 126, 77) 0px 0px 1.25rem 0px;
+
 }
+
+.fighting .tipo1 {
+    background-color: rgb(218, 96, 47);
+    box-shadow: rgb(179, 53, 4) 0px 0px 1.25rem 0px;
+
+}
+
 .psychic {
-    background-color: rgb(128, 21, 200);
+    background-color: rgb(141, 52, 201);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(141, 52, 201) 0px 0px 1.25rem 0px;
+
 }
+
+.psychic .tipo1 {
+    background-color: rgb(112, 0, 204);
+    box-shadow: rgb(70, 1, 116) 0px 0px 1.25rem 0px;
+}
+
 .ice {
     background-color: rgb(0, 208, 255);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(0, 208, 255) 0px 0px 1.25rem 0px;
+
 }
+
+.ice .tipo1 {
+    box-shadow: rgb(28, 84, 97) 0px 0px 1.25rem 0px;
+    background-color: rgb(103, 206, 230);
+
+}
+
 .rock {
     background-color: rgb(200, 174, 113);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(200, 174, 113) 0px 0px 1.25rem 0px;
+
 }
+
 .rock .tipo1 {
     background-color: rgb(115, 93, 43);
-    
+    box-shadow: rgb(116, 91, 33) 0px 0px 1.25rem 0px;
+
+
 }
+
 .dragon {
     background-color: rgb(41, 81, 203);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(41, 81, 203) 0px 0px 1.25rem 0px;
+
 }
+
+.dragon .tipo1 {
+    background-color: rgb(39, 61, 128);
+    box-shadow: rgb(33, 48, 94) 0px 0px 1.25rem 0px;
+
+
+}
+
 .ghost {
     background-color: rgb(55, 83, 169);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(55, 83, 169) 0px 0px 1.25rem 0px;
+
 }
 
-.ghost .tipo1{
+.ghost .tipo1 {
     background-color: rgb(24, 63, 182);
+    box-shadow: rgb(92, 125, 223) 0px 0px 1.25rem 0px;
+
 
 }
+
 .dark {
     background-color: rgb(11, 11, 11);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(48, 50, 54) 0px 0px 1.25rem 0px;
+
 }
+
+.dark .tipo1 {
+    background-color: rgb(37, 37, 37);
+    box-shadow: rgb(65, 65, 65) 0px 0px 1.25rem 0px;
+
+}
+
 .steel {
     background-color: rgb(166, 166, 166);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-size: 0.9rem;
     border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(166, 166, 166) 0px 0px 1.25rem 0px;
+
 }
 
+.steel .tipo1 {
+    background-color: rgb(117, 117, 117);
+    box-shadow: rgb(73, 72, 72) 0px 0px 1.25rem 0px;
+}

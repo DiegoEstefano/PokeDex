@@ -16,8 +16,6 @@ ul li {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    ransition: all 0.5s ease 0s;
-    box-shadow: rgb(72, 208, 176) 0px 0px 1.25rem 0px;
 }
 
 li p {
@@ -41,6 +39,9 @@ section {
     justify-content: center;
     align-items: center;
     width: 120px;
+    height: 80px;
+    margin: 0 auto;
+
 }
 
 .types div {

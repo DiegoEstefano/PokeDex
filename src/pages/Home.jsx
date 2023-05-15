@@ -5,15 +5,18 @@ import './Home.css'
 import PokemonCard from '../components/PokemonCard'
 import useFetch from '../hooks/useFetch'
 import Loading from '../components/Loading'
+import Nav from '../components/Nav'
 
 const url = `https://pokeapi.co/api/v2/pokemon?limit=150&offset=0`
 
 export default function Home() {
 
-    const { pokemon, loading } = useFetch(url);
+  const { pokemon, loading } =  useFetch(url);
 
   return (
-     <div className='cards'>
+    <>
+      <Nav />
+      <div className='cards'>
         {!loading && <Loading />}
         {pokemon && pokemon.map((poke, i) => (
           <PokemonCard name={poke.name}
@@ -22,5 +25,6 @@ export default function Home() {
             types={poke.types} />
         ))}
       </div>
+    </>
   )
 }

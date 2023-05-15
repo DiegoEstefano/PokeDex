@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 export default function useFetch(url) {
     const [pokemon, setPokemon] = useState([])
     const [loading, setLoading] = useState(null)
-    
     useEffect(() => {
         async function getPokemons() {
             setLoading(false)
@@ -17,6 +16,6 @@ export default function useFetch(url) {
             setLoading(true)
         }
         getPokemons()
-    }, [url])
+    }, []) 
     return { pokemon, loading }
 }
