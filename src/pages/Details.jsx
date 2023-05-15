@@ -19,44 +19,69 @@ export default function Details() {
       const data = await res.json()
       setPokemon(data)
       setTipos(data.types)
-      console.log(data)
-
     }
     getPokemons()
   }, [id])
 
   return (
     <div>
-      {pokemon && <section className={`detailHome ${tipos[0].type.name}`}>
-        <NavLink to={"/"}>
-          <BsCaretLeft />
-        </NavLink>
-        <section>
-          <p>{pokemon.name.toUpperCase()}</p>
-          <p>#{pokemon.id}</p>
-          <Types types={pokemon.types} />
-        </section>
-        <section>
-          <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
-        </section>
-      </section>}
+      {pokemon &&
+        <section className={`detailHome ${tipos[0].type.name}`}>
+          <NavLink to={"/"}>
+            <BsCaretLeft />
+            <span>voltar</span>
+          </NavLink>
+          <section className='id-section'>
+            <p>#{pokemon.id}</p>
+            <p>{pokemon.name.toUpperCase()}</p>
+          </section>
+          <section>
+            <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
+          </section>
+        </section>}
 
-      {!pokemon && <Loading />}
-      {
-        pokemon &&
-        <div>
-          <p>{pokemon.id}</p>
-          <p>{pokemon.name}</p>
-          {pokemon.abilities[0]  ?
-            <p>{pokemon.abilities[0].ability.name}</p> :
-            <>
-              <p>{pokemon.abilities[0].ability.name}</p> <p>{pokemon.abilities[1].ability.name}</p>
-            </>
-          }
+      <section className='about'>
+        {
+          pokemon &&
+          <div className='about'>
+            <h1>About</h1>
+            <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt="" />
+          </div>
+        }
+      </section>
 
-          <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt="" />
-        </div>
-      }
+      <section className='aboutData'>
+        {
+          pokemon &&
+          <div className='aboutData'>
+            <div className='aboutContainer'>
+              <span>Name:</span> <span>{pokemon.name.toUpperCase()}</span>
+            </div>
+            <div className='aboutContainer'>
+              <span>Weight: </span> <span>{pokemon.weight} kg</span>
+            </div>
+            <div className='aboutContainer'>
+              <span>Height: </span> <span>{pokemon.height} cm</span>
+            </div>
+            <div >
+              <span>Abilities: </span>
+              {pokemon.abilities[1] ?
+                <div className='abilities-container'>
+                  <p className='abilities'>{pokemon.abilities[0].ability.name}</p>
+                  <p className='abilities'>{pokemon.abilities[1].ability.name}</p>
+                </div>
+                :
+                <div>
+                  <p className='abilities'>{pokemon.abilities[0].ability.name}</p>
+                </div>
+              }
+            </div>
+            <div>
+              <span>Types: <Types types={tipos} /></span>
+            </div>
+          </div>
+        }
+      </section>
     </div >
   )
 }
