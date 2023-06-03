@@ -1,4 +1,4 @@
-*{
+* {
     text-decoration: none;
 }
 
@@ -36,12 +36,13 @@ form {
     outline: none;
     border: none;
     background-color: transparent;
-    -webkit-border-radius:10px 0px 0px 10px;
-    -moz-border-radius:10px 0px 0px 10px;
-    -ms-border-radius:10px 0px 0px 10px;
-    -o-border-radius:10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
     color: white;
 }
+
 .pesquisa::placeholder {
     font-size: 0.9rem;
     color: white;
@@ -56,7 +57,7 @@ form {
     border-left: 2px solid rgb(10, 10, 253);
     cursor: pointer;
     border-radius: 0px 9px 9px 0px;
-    background-color:#4153d9 ;
+    background-color: #4153d9;
 }
 
 .procurar svg {
@@ -69,9 +70,19 @@ form {
         flex-direction: column;
     }
 
-  
+
 
     form label {
         margin-right: 0;
     }
+}
+
+@media (max-width: 756px) {
+
+    .nav {
+
+        justify-content: center;
+
+    }
+
 }

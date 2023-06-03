@@ -5,27 +5,33 @@ import Loading from '../components/Loading'
 import { BsCaretLeft } from "react-icons/bs";
 import Types from '../components/Types'
 import { NavLink } from 'react-router-dom';
-export default function Details() {
+import useFetch from '../hooks/useFetch';
 
+
+export default function Details() {
   const [ids] = useSearchParams()
   const id = ids.get("id")
 
-  const [pokemon, setPokemon] = useState(null)
-  const [tipos, setTipos] = useState(null)
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+  const [loading, setLoading] = useState(null)
+  const [tipos, setTipos] = useState([])
 
-  useEffect(() => {
-    async function getPokemons() {
-      const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      const data = await res.json()
-      setPokemon(data)
-      setTipos(data.types)
+  const { pokemon } = useFetch(url);
+
+ useEffect(() => {
+    setLoading(false)
+    if (pokemon.types) {
+      setTipos(pokemon.types);
     }
-    getPokemons()
-  }, [id])
+    setLoading(true)
+  },[pokemon])
+
+
 
   return (
+
     <div>
-      {pokemon &&
+     {tipos.length &&
         <section className={`detailHome ${tipos[0].type.name}`}>
           <NavLink to={"/"}>
             <BsCaretLeft />
@@ -37,30 +43,30 @@ export default function Details() {
           <section>
             <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
           </section>
-        </section>}
+        </section>}   
 
-      <section className='about'>
+       <section className='about'>
         {
-          pokemon &&
+          tipos.length &&
           <div className='about'>
             <h1>About</h1>
             <img src={pokemon.sprites.versions['generation-v']['black-white'].animated.front_default} alt="" />
           </div>
         }
-      </section>
+      </section> 
 
-      <section className='aboutData'>
+     <section className='aboutData'>
         {
-          pokemon &&
+          tipos.length &&
           <div className='aboutData'>
             <div className='aboutContainer'>
               <span>Name:</span> <span>{pokemon.name.toUpperCase()}</span>
             </div>
             <div className='aboutContainer'>
-              <span>Weight: </span> <span>{(pokemon.weight/10).toFixed(1)} kg</span>
+              <span>Weight: </span> <span>{(pokemon.weight / 10).toFixed(1)} kg</span>
             </div>
             <div className='aboutContainer'>
-              <span>Height: </span> <span>{(pokemon.height/10).toFixed(1)} m</span>
+              <span>Height: </span> <span>{(pokemon.height / 10).toFixed(1)} m</span>
             </div>
             <div >
               <span>Abilities: </span>
@@ -80,7 +86,7 @@ export default function Details() {
             </div>
           </div>
         }
-      </section>
+      </section>  
     </div >
   )
 }
