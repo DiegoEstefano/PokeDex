@@ -27,7 +27,7 @@ export default function Search() {
     <>
          <Nav />
       {search.types &&
-        <>
+        <div className='container-search'>
          <h1>Resultados para: {query.toUpperCase()} </h1>
           <div className='cards'>
             {!search && <Loading />}
@@ -38,7 +38,7 @@ export default function Search() {
                 types={search.types} />
             }
           </div> 
-        </>
+        </div>
 
       }  
 

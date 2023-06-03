@@ -9,12 +9,15 @@ import Loading from '../components/Loading'
 import Nav from '../components/Nav'
 import { useEffect, useState } from 'react'
 
-const url = `https://pokeapi.co/api/v2/pokemon?limit=150&offset=0`
 
 export default function Home() {
   const [pokeDetails, setPokeDetails] = useState(null)
-  const { pokemon } = useFetch(url);
   const [loading, setLoading] = useState(null)
+  const [morePoke, setMorePoke] = useState(50)
+
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=${morePoke}&offset=0`
+
+  const { pokemon } = useFetch(url);
 
   useEffect(() => {
     setLoading(false)
@@ -28,6 +31,11 @@ export default function Home() {
     }
   }, [pokemon])
 
+  const carregar25 = () => {
+    setMorePoke(morePoke + 50)
+    console.log(morePoke)
+  }
+
   return (
     <>
       <Nav />
@@ -39,6 +47,10 @@ export default function Home() {
             img={poke.sprites.other['official-artwork'].front_default}
             types={poke.types} />
         ))}
+
+      </div>
+      <div className='loadMore'>
+        <button  onClick={carregar25}>Mostrar mais</button>
       </div>
     </>
   )

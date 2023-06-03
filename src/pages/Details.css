@@ -71,6 +71,7 @@ span {
     height: inherit;
     color: white;
     border-radius: 10px;
+    text-align: center;
 }
 
 .aboutData {

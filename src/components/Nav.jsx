@@ -15,7 +15,7 @@ export default function Nav() {
         e.preventDefault();
         console.log(search)
         if (!search) return
-        navigate(`/search?q=${search}`)
+        navigate(`/search?q=${search.toLocaleLowerCase()}`)
         setSearch("")
     }
     return (
