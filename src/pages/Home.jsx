@@ -47,11 +47,15 @@ export default function Home() {
             img={poke.sprites.other['official-artwork'].front_default}
             types={poke.types} />
         ))}
+      </div>
 
-      </div>
-      <div className='loadMore'>
-        <button  onClick={carregar25}>Mostrar mais</button>
-      </div>
+      {pokeDetails &&
+        <div className='loadMore'>
+          <button onClick={carregar25}>Mostrar mais</button>
+        </div>
+      }
+
+
     </>
   )
 }
