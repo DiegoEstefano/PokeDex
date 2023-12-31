@@ -1,5 +1,5 @@
 # PokeDex
-projeto de pokedex criada em React realizando a requizição na pokeapi.
+Pokedex project created in React making the request on pokeapi.
 
-[Link de acesso
+[Link
 ](https://poke-dex-swart-ten.vercel.app/)
